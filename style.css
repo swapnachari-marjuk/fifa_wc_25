@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.max-width{
+    max-width: 1240px;
+    margin: 0px auto;
+}
+
+.display-flex{
+    display: flex;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.btn{
+    background-color: red;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* header banner related styles */
+
+.banner{
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    background-color: black;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.banner-text-content{
+    max-width: 565px;
+    margin-left: 3.5em;
+}
+
+.bnr_title{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+.bnr_desc{
+    max-width: 540px;
+}
+
+.banner-text-content .btn{
+    margin-top: 10px;
+}
+
+.banner-img{
+    max-width: 619px;
+    margin-top: 2.5em;
+}
+
+
+/* upcoming matches section styles */
+
+.upcoming-matches{
+    gap: 30px;
+}
+
+.upcoming-matches-left button:nth-child(1),
+.upcoming-matches-left button:nth-child(2) {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid rgb(228, 228, 228);
+}
+.upcoming-matches-left{
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.upcoming-matches-left button{
+    font-weight: 600;
+}
+
+/* card related styles */
+
+.upcoming-matches-right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px 30px;
+}
+
+.card{
+    border: 1px solid rgb(230, 229, 229);
+    border-radius: 10px;
+}
+
+.card img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-body{
+    padding: 15px;
+}
+
+.card-body h4:nth-child(2){
+    margin: 10px auto;
+}
+
+
+.card button{
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 25px;
+}
+
+.c-b-bottom{
+    gap: 15px;
+}
+
+
+/* responsive for tablet */
+
+@media screen and (max-width:992px) {
+
+    .banner{
+        margin-top: 0px;
+        border-radius: 0px;
+    }
+
+    /* .banner-text-content button {
+        margin-bottom: 10px;
+    } */
+
+    .upcoming-matches{
+        flex-direction: column;
+    }
+
+    .upcoming-matches-left {
+        flex: 1;
+        flex-direction: row;
+        background-color: #ffffff;
+    }
+
+    .upcoming-matches-left > *{
+        flex: 1;
+    }
+
+    .upcoming-matches-right{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Responsive for mobile device */
+
+@media screen and (max-width:576px) {
+    .banner,
+    .upcoming-matches{
+        flex-direction: column;
+    }
+
+    .banner{
+        margin: 2px;
+    }
+
+    .banner-text-content{
+        text-align: center;
+        margin:20px auto;
+    }
+
+    .upcoming-matches-left{
+        background-color: #ffffff;
+        flex-direction: column;
+    }
+
+
+    .upcoming-matches-right{
+        grid-template-columns: 1fr;
+        margin: 5px;
+    }
+
+}
