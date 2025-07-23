@@ -158,15 +158,12 @@ footer h3{
     }
 
     .banner-img{
-    /* background-color: red;
-    max-width: 619px;
-    margin-top: 2.5em; */
-    margin-bottom: -5rem;
+    margin-bottom: -5.9rem;
 }
 
-    /* .banner-text-content button {
-        margin-bottom: 10px;
-    } */
+    .banner-text-content button {
+        margin-bottom: 15px;
+    }
 
     .upcoming-matches{
         flex-direction: column;
